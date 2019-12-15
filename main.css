@@ -1,0 +1,200 @@
+html{
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0 auto;
+    font-family: Georgia;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#introduction{
+    padding-bottom: 10vh; 
+}
+#intro-color{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(1,1, 1, 0.7);
+    display: none;
+    position: fixed;
+    z-index: -1;
+}
+.story{
+    padding: 0 10vw;
+}
+.story-header{
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+}
+#myVideo{
+    position: fixed;
+    z-index: -2;
+
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+  
+    /* Center the video */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    filter: contrast(80%) brightness(70%);
+}
+.story-header .label{
+    font-family: halyard-display, sans-serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.story-header .label .logo{
+    margin-right: 13px;
+}
+.story-header .label .logo a{
+    text-decoration: none; 
+    color: white;
+    outline: none;
+}
+.story-header .label .topic{
+    font-weight: 600;
+    letter-spacing: normal;
+    border-left: 1px solid rgba(255,255,255,.25);
+    padding-left: 20px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.story-header .header{
+    margin: 0 auto;
+    padding: 10px 5px;
+    
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+
+    max-width: 60vw;
+    width: 100%;
+
+    text-align: center; 
+
+    background-color: rgba(23, 23, 23, 0.5);
+}
+.story-header .header h1, 
+.story-header .header h2{
+    font-weight: 500; 
+    margin: 0;
+}
+.story-header h1{
+    font-size: 50px;
+}
+.story-header h2{
+    font-size: 40px;
+}
+#byLine h6,
+#byLine p{
+    display: inline;
+    padding:5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#byLine h6{
+    font-weight: 700;
+}
+#byLine p{
+    font-size: 12px;
+}
+
+.story-text{
+    position: relative;
+    left: 0; 
+    right: 0;
+
+    text-align: center;
+    margin: 50vh auto;
+    padding: 10px 10px;
+
+    max-width: 30vw; 
+    width:100%;
+
+    background-color: rgba(23, 23, 23, 0.5);
+
+    font-size: 1.20rem;
+    line-height: 1.5;
+}
+.story-choices{
+    margin-bottom: 10vh;
+
+    max-width: 20vw; 
+    width:100%;
+}
+.story-options-container{
+    margin: 0 auto; 
+    text-align: center;
+}
+.story-options{
+    display: inline-block;
+
+
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 5px solid  rgba(23, 23, 23, 0.5);
+    
+    font-size: 24px;
+
+    max-width: 20vw; 
+    width: 100%;
+    height: 20vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+
+    line-height: 20vh;
+    cursor: pointer;
+
+}
+.story-options:hover{
+    background-color: rgba(99, 99, 99, 0.7);
+    border: 5px solid white;
+}
+.story-options span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.options-link{
+    outline: none; 
+    color: white; 
+    display: block;
+    height: 100%;
+}
+
+
+
+#article-container{
+    margin: 0 auto;
+    padding-top: 20vh;
+    width: 100%; 
+    font-size: 1.20rem;
+    color: #e6e6e6;
+
+    position: relative;
+    z-index: 1;
+    background-color: #272727;
+    
+    display: none;
+}
+
+#article-content{
+    margin: 0 auto; 
+    max-width: 45vw; 
+    width: 100%;
+    line-height: 1.5;
+}
