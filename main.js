@@ -1,12 +1,3 @@
-// $(window).scroll(function() {
-//     if ( $(window).scrollTop() >= window.innerHeight / 2 ) {
-//         let brightness = 30;
-//             $('#myVideo').css('filter', 'brightness(' + brightness + '%)');
-//     } else{
-//         $('#myVideo').css('filter', 'brightness(50%)');
-//     }
-// });
-
 $(window).scroll(function() {
     if ( $(window).scrollTop() >= window.innerHeight / 2 ) {
         let brightness = 30;
@@ -41,27 +32,44 @@ $('#many-day').click(function(){
     $('#many-day').css('border', '5px solid white')
 })
 
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 
 
-// var windw = this;
 
-// $.fn.followTo = function ( pos ) {
-//     var $this = $('#myVideo'),
-//         $window = $(windw);
-    
-//     $window.scroll(function(e){
-//         if ($window.scrollTop() > pos) {
-//             $this.css({
-//                 position: 'absolute',
-//                 top: pos
-//             });
-//         } else {
-//             $this.css({
-//                 position: 'fixed',
-//                 top: 0
-//             });
-//         }
-//     });
-// };
-// let pos = $('#introduction').outerHeight(true);
-// $('#myVideo').followTo(300);
+$(document).on('scroll', function() {
+    // if($(this).scrollTop()>=$('#section1').position().top){
+       
+    // }
+    if(isScrolledIntoView($('#section1-header')))
+    {
+
+        // $("#loader").fadeIn("slow", function() {
+        //     $(this).addClass("loader");
+        // });
+        // $('#section1-background').fadeIn(3000);
+        // $('#section1').css('background-image', 'url(primePlane.jpg)')
+        // $('#section1').css('background-size', 'cover    ')
+        // $('#section1').css('background-repeat', 'no-repeat')
+        // $('#section1').css('background-position', 'center center')
+
+        
+        // $('#container').css('background-image', 'url(primePlane.jpg)')
+
+
+        // $('#section1').fadeIn("slow", function(){
+        //     $(this).addClass("section1-background");
+        // })
+        // $('#section1').addClass("section1-background");
+        
+    }    
+})
+
+
+
